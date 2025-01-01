@@ -3,30 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Store time</title>
+    <meta name="author" content="Siddharth Uzumaki" />
+    <meta name="description" content="Store Hours for The Little Taco Shop." />
+    <title>LTS Hours</title>
     <link rel="icon" href="fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Style.css" />
+    <script src="js/main.js" defer></script>
   </head>
-  <body style="margin: 30px">
-    <article>
-      <header>
-        <h1>Little Taco Shop Hours</h1>
-        <nav>
-          <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="#aboutlts">About LTS</a></li>
-            <li><a href="#ourmenu">Our Menu</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <figure>
-          <img src="images\taco2.jpg" alt="Tacos" title="Tacos" height="300" />
-          <figcaption style="padding-left: 50px">
-            A Tray of Tasty Tacos
-          </figcaption>
-        </figure>
-        <hr />
+
+  <body>
+    <header class="header">
+      <h1 class="header_h1">Little Taco Shop</h1>
+      <nav class="header_nav">
+        <ul class="header_ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <figure>
+        <img
+          src="images\taco2.jpg"
+          alt="Tacos"
+          title="Tacos"
+          height="667"
+          width="1000"
+        />
+        <figcaption class="offscreen" style="padding-left: 50px">
+          A Tray of Tasty Tacos
+        </figcaption>
+      </figure>
+    </section>
+
+    <main class="main">
+      <article class="main_article">
+        <h2>Hours</h2>
         <p>We are open 7 days a week!</p>
         <dl>
           <dt>Sunday-Thursday</dt>
@@ -35,11 +50,14 @@
           <dd>11am-11pm</dd>
         </dl>
         <p><a href="#">Back to Top</a></p>
-      </main>
-      <hr />
-      <footer>
-        <p>Copyright &copy; The Little Taco Shop</p>
-      </footer>
-    </article>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span>Copyright &copy;<time id="year"></time></span>
+        <span>The Little Taco Shop</span>
+      </p>
+    </footer>
   </body>
 </html>
